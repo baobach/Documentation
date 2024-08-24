@@ -29,7 +29,7 @@ self._symbol = option.symbol</pre>
         <tr>
             <td><code>resolution</code></td>
 	        <td><code class="csharp">Resolution?</code><code class="python">Resolution/NoneType</code></td>
-            <td>The resolution of the market data. To view the supported resolutions, see <a href='/docs/v2/writing-algorithms/securities/asset-classes/equity-options/requesting-data#03-Resolutions'>Resolutions</a>. The Equity resolution must be less than or equal to the Equity Option resolution. For example, if you set the Equity resolution to minute, then you must set the Equity Option resolution to minute, hour, or daily.</td>
+            <td>The resolution of the market data. To view the supported resolutions, see <a href='/docs/v2/writing-algorithms/securities/asset-classes/equity-options/requesting-data/individual-contracts#03-Resolutions'>Resolutions</a>. The Equity resolution must be less than or equal to the Equity Option resolution. For example, if you set the Equity resolution to minute, then you must set the Equity Option resolution to minute, hour, or daily.</td>
             <td><code class="python">None</code><code class="csharp">null</code></td>
         </tr>
         <tr>
@@ -94,8 +94,10 @@ self._symbol = option.symbol</pre>
 <p>To override the default <a href="/docs/v2/writing-algorithms/reality-modeling/options-models/pricing">pricing model</a> of the Option, <a href='https://www.quantconnect.com/docs/v2/writing-algorithms/reality-modeling/options-models/pricing#04-Set-Models'>set a pricing model</a>.</p>
 
 <div class="section-example-container">
-    <pre class="csharp">option.price_model = OptionPriceModels.crank_nicolson_fd();</pre>
-    <pre class="python">option.price_model = OptionPriceModels.crank_nicolson_fd()</pre>
+    <pre class="csharp">// Set price_model property to use the Crank-Nicolson finite-difference model to price the options.
+option.price_model = OptionPriceModels.crank_nicolson_fd();</pre>
+    <pre class="python"># // Set price_model field to use the Crank-Nicolson finite-difference model to price the options.
+option.price_model = OptionPriceModels.crank_nicolson_fd()</pre>
 </div>
 
 <?php echo file_get_contents(DOCS_RESOURCES."/reality-modeling/volatility-model.html"); ?>

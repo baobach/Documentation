@@ -31,17 +31,22 @@
         <tr><td><code>--binance-api-secret</code> or <code>--binanceus-api-secret</code></td></tr>
 
         <tr>
-            <td rowspan="3"><code>Bybit</code></td>
+            <td rowspan="2"><code>Bybit</code></td>
             <td><code>--bybit-api-key</code></td>
         </tr>
         <tr><td><code>--bybit-api-secret</code></td></tr>
-        <tr><td><code>--bybit-vip-level</code></td></tr>
 
         <tr>
             <td rowspan="2"><code>CoinApi</code></td>
             <td><code>--coinapi-api-key</code></td>
         </tr>
         <tr><td><code>--coinapi-product</code></td></tr>
+
+        <tr>
+            <td rowspan="2"><code>"Coinbase Advanced Trade"</code></td>
+            <td><code>--coinbase-api-name</code></td>
+        </tr>
+        <tr><td><code>--coinbase-api-private-key</code></td></tr>
         
         <tr>
             <td><code>FactSet</code></td>
